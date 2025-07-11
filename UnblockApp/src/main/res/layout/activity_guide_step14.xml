@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fff3e0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:scrollbars="none">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 14"
+            android:textColor="#e65100"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Finance Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#f3e5f5"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/text_finance_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finance Tip: Understanding Bonds"
+                android:textColor="#7b1fa2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/image_finance"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#9c27b0"
+                android:contentDescription="Finance Image"
+                android:scaleType="centerInside"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_finance_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bonds are loans you give to companies or governments in exchange for regular interest payments."
+                android:textColor="#4a148c"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Image Placeholder -->
+        <ImageView
+            android:id="@+id/image_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ffcc02"
+            android:contentDescription="Guide Image"
+            android:scaleType="centerInside"
+            android:paddingBottom="12dp" />
+
+        <!-- Content Text -->
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn about bonds and how they provide steady income for your portfolio."
+            android:textColor="#bf360c"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Simple Quiz -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz: What is a bond?"
+            android:textColor="#e65100"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A type of stock"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A bank account"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A loan to a company or government"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <!-- Feedback Text -->
+        <TextView
+            android:id="@+id/text_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#4caf50"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Next Step Button -->
+        <Button
+            android:id="@+id/button_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ff9800"
+            android:padding="14dp"
+            android:enabled="false"
+            android:elevation="6dp"
+            android:stateListAnimator="@null" />
+
+        <!-- Progress Indicator -->
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 14 of 20"
+            android:textColor="#e65100"
+            android:textSize="14sp"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
