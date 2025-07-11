@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#e8f5e8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:scrollbars="none">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 13"
+            android:textColor="#2e7d32"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Finance Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e1f5fe"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/text_finance_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finance Tip: Compound Interest Magic"
+                android:textColor="#0277bd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/image_finance"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#03a9f4"
+                android:contentDescription="Finance Image"
+                android:scaleType="centerInside"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_finance_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compound interest is earning interest on your interest - the eighth wonder of the world according to Einstein."
+                android:textColor="#01579b"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Image Placeholder -->
+        <ImageView
+            android:id="@+id/image_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#a5d6a7"
+            android:contentDescription="Guide Image"
+            android:scaleType="centerInside"
+            android:paddingBottom="12dp" />
+
+        <!-- Content Text -->
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover the power of compound interest and how it grows your wealth over time."
+            android:textColor="#1b5e20"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Simple Quiz -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz: What is compound interest?"
+            android:textColor="#2e7d32"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest earned on interest"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simple interest only"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank fees"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <!-- Feedback Text -->
+        <TextView
+            android:id="@+id/text_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#4caf50"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Next Step Button -->
+        <Button
+            android:id="@+id/button_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4caf50"
+            android:padding="14dp"
+            android:enabled="false"
+            android:elevation="6dp"
+            android:stateListAnimator="@null" />
+
+        <!-- Progress Indicator -->
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 13 of 20"
+            android:textColor="#2e7d32"
+            android:textSize="14sp"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
