@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unblock App</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="enter_number">Enter Your Number</string>
+    <string name="phone_hint">Enter phone number</string>
+    <string name="lets_go">Let\'s Go!</string>
+    <string name="vpn_connected">VPN Connected</string>
+    <string name="vpn_permission_denied">VPN permission denied</string>
+    <string name="enter_number_prompt">Please enter a number</string>
+    <string name="guide_completed">You have completed the guide!</string>
+    <string name="watch_ad_prompt">You must watch the ad to proceed</string>
+    <string name="premium_unlocked">Premium access unlocked!</string>
+    <string name="share_app_title">Check out Unblock App!</string>
+    <string name="share_app_text">Download Unblock App from the Play Store: https://play.google.com/store/apps/details?id=com.example.unblockapp</string>
+    <string name="share_app_chooser">Share Unblock App</string>
+</resources>
