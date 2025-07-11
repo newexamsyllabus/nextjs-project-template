@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unblockapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BIND_VPN_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Unblock App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UnblockApp">
+
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".GuideActivity" />
+        <activity android:name=".GuideStep1Activity" />
+        <activity android:name=".GuideStep2Activity" />
+        <activity android:name=".GuideStep3Activity" />
+        <activity android:name=".GuideStep4Activity" />
+        <activity android:name=".GuideStep5Activity" />
+        <activity android:name=".GuideStep6Activity" />
+        <activity android:name=".GuideStep7Activity" />
+        <activity android:name=".GuideStep8Activity" />
+        <activity android:name=".GuideStep9Activity" />
+        <activity android:name=".GuideStep10Activity" />
+        <activity android:name=".GuideStep11Activity" />
+        <activity android:name=".GuideStep12Activity" />
+        <activity android:name=".GuideStep13Activity" />
+        <activity android:name=".GuideStep14Activity" />
+        <activity android:name=".GuideStep15Activity" />
+        <activity android:name=".GuideStep16Activity" />
+        <activity android:name=".GuideStep17Activity" />
+        <activity android:name=".GuideStep18Activity" />
+        <activity android:name=".GuideStep19Activity" />
+        <activity android:name=".GuideStep20Activity" />
+        <activity android:name=".ShareUnlockActivity" />
+
+        <!-- VPN Service declaration -->
+        <service
+            android:name=".SmartproxyVpnService"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:exported="true" />
+    </application>
+
+</manifest>
