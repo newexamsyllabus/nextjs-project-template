@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:paddingBottom="8dp" />
+
+        <!-- Image Placeholder -->
+        <ImageView
+            android:id="@+id/image_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#CCCCCC"
+            android:contentDescription="Guide Image"
+            android:scaleType="centerInside"
+            android:paddingBottom="8dp" />
+
+        <!-- Content Text -->
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guide instruction content for step 1."
+            android:paddingBottom="16dp" />
+
+        <!-- Finance Headline -->
+        <TextView
+            android:id="@+id/text_finance_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finance Tip"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Finance Info -->
+        <TextView
+            android:id="@+id/text_finance_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finance information goes here."
+            android:paddingBottom="16dp" />
+
+        <!-- Quiz Question -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is the main purpose of a VPN?"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <!-- Radio Group for Quiz -->
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To secure internet connection" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To increase internet speed" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To download files faster" />
+
+        </RadioGroup>
+
+        <!-- Feedback Text -->
+        <TextView
+            android:id="@+id/text_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#4CAF50"
+            android:paddingBottom="8dp" />
+
+        <!-- Next Step Button -->
+        <Button
+            android:id="@+id/button_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:enabled="false" />
+
+        <!-- Progress Indicator -->
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 1 of 20"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
