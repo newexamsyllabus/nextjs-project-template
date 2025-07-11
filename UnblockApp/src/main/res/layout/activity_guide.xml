@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:paddingBottom="8dp" />
+
+        <!-- Image Placeholder -->
+        <ImageView
+            android:id="@+id/image_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#CCCCCC"
+            android:contentDescription="Guide Image"
+            android:scaleType="centerInside"
+            android:paddingBottom="8dp" />
+
+        <!-- Content Text -->
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guide instruction content goes here."
+            android:paddingBottom="8dp" />
+
+        <!-- Quiz / Question Box -->
+        <EditText
+            android:id="@+id/edit_quiz_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your answer"
+            android:inputType="text"
+            android:paddingBottom="8dp" />
+
+        <!-- Next Step Button -->
+        <Button
+            android:id="@+id/button_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:enabled="false" />
+
+        <!-- Progress Indicator -->
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 1 of 20"
+            android:paddingTop="16dp" />
+
+        <!-- Banner Ad -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    </LinearLayout>
+</ScrollView>
