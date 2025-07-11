@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#e3f2fd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:scrollbars="none">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 7"
+            android:textColor="#0d47a1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Finance Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#bbdefb"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/text_finance_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finance Tip: Basics of Stock Market"
+                android:textColor="#0d47a1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/image_finance"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#1976d2"
+                android:contentDescription="Finance Image"
+                android:scaleType="centerInside"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_finance_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Understanding stocks is key to making smart investment decisions."
+                android:textColor="#0d47a1"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Image Placeholder -->
+        <ImageView
+            android:id="@+id/image_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#90caf9"
+            android:contentDescription="Guide Image"
+            android:scaleType="centerInside"
+            android:paddingBottom="12dp" />
+
+        <!-- Content Text -->
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Understand the basics of stock market investing and how to get started."
+            android:textColor="#0d47a1"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Simple Quiz -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz: What is a stock?"
+            android:textColor="#0d47a1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A share of ownership in a company"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A type of bond"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A bank account"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <!-- Feedback Text -->
+        <TextView
+            android:id="@+id/text_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#1b5e20"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Next Step Button -->
+        <Button
+            android:id="@+id/button_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:backgroundTint="#1976d2"
+            android:padding="14dp"
+            android:enabled="false"
+            android:elevation="6dp"
+            android:stateListAnimator="@null" />
+
+        <!-- Progress Indicator -->
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 7 of 20"
+            android:textColor="#0d47a1"
+            android:textSize="14sp"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
